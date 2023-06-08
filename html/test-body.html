@@ -1,0 +1,33 @@
+<div id="contents">
+    <form action="" method="POST">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input class="form-control" type="text" name="email" id="email" />
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input class="form-control" type="password" name="password" id="password" />
+        </div>
+        <div class = "form-group">
+            <input type="submit" name="login" value="Login" />
+        </div>
+    </form>
+    <div class="validate">
+        <?php
+            if (isset($status)) {
+                echo $status;
+            }
+        ?>
+    </div>
+    <div id="code">
+        <?php
+            $a = array();
+            for ($i = 0; $i < 10; $i++) {
+                $a[] = $i+1;
+            }
+            foreach($a as $number) {
+                echo $number;
+            }
+        ?>
+    </div>
+</div>
